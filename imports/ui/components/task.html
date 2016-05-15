@@ -1,0 +1,11 @@
+<template name="task">
+  <li class="list-group-item clearfix">
+    <input type="checkbox" class="toggle-checked" checked="{{ checked }}"/>
+    <span class="{{#if checked}}text-deleted{{/if}}">
+      <strong>{{username}}</strong> - {{ text }}
+    </span>
+    <button class="btn btn-danger btn-delete pull-right">
+      <i class="glyphicon glyphicon-remove"></i>
+    </button>
+  </li>
+</template>

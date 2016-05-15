@@ -1,0 +1,20 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Tasks</h1>
+      
+     {{> loginButtons}}
+    </header>
+
+    {{#if currentUser}}
+    <form class="new-task">
+      <div class="form-group">
+        <input type="text" class="form-control" name="text" placeholder="Enter new task" autocomplete="off" />
+      </div>
+    </form>
+    {{/if}}
+    
+    {{>tasksList}}
+   
+  </div>
+</body>

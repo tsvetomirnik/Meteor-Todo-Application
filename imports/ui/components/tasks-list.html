@@ -1,0 +1,17 @@
+<template name="tasksList">
+  <p class="text-right">
+    {{openTasksCount}} open tasks
+  </p>
+  
+  {{#if tasks.count}}
+  <ul class="list-group">
+    {{#each tasks}}
+      {{>task}}
+    {{/each}}
+  </ul>
+  {{else}}
+  <div class="alert alert-info">You don't have any tasks</div>
+  {{/if}}
+  
+  
+</template>
